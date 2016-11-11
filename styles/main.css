@@ -31,7 +31,7 @@ body {
   overflow-y: auto;
 }
 .wrap {
-  height: 66%;
+  height: 64.1%;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -66,6 +66,9 @@ body {
   display: inline-block !important;
   transform: translateX(-200px);
 }
+.test2 li {
+  width: 90%;
+}
 .test1 {
   position: relative;
   z-index: -1;
@@ -75,8 +78,11 @@ body {
   display: inline-block !important;
   transform: translateX(200px);
 }
+.test1 li {
+  width: 100%;
+}
 .before-block {
-  height: 17.2%;
+  height: 18.1%;
   background: #000;
   position: absolute;
   top: 0;
@@ -86,7 +92,7 @@ body {
   transform: translate(-50%, 200px);
 }
 .after-block {
-  height: 17.2%;
+  height: 18.1%;
   background: #000;
   text-align: center;
   vertical-align: middle;
@@ -108,7 +114,7 @@ body {
   width: auto;
 }
 .tab-nav .nav-menu a {
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 500;
 }
 .tab-nav li {
@@ -116,7 +122,6 @@ body {
   display: block;
   padding: 5px;
   text-align: left;
-  width: 90%;
   margin: 5px 2px 0 5px;
 }
 .tab-nav li a {
@@ -134,11 +139,11 @@ body {
   line-height: 1.5;
 }
 .tab-nav li .lefttabs .title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 .tab-nav li .lefttabs span {
-  font-size: 12px;
+  font-size: 9px;
 }
 .tab-nav li .yellow {
   background: #ffd000;
@@ -161,7 +166,7 @@ body {
   background: #2a2a2a;
 }
 .tab-nav li.select a {
-  color: darkblue;
+  color: steelblue;
 }
 .tab-nav li.select a.lefttabs {
   color: black;
@@ -187,7 +192,7 @@ body {
   z-index: 1;
 }
 .customer-animate2 {
-  transition: all 1.5s;
+  transition: all 1s;
 }
 .customer-animate {
   transition: all 1s;
@@ -220,8 +225,8 @@ body {
   padding: 15px 15px 15px 0;
 }
 .icon-fa {
-  line-height: 15vh;
-  font-size: 30px;
+  line-height: 25vh;
+  font-size: 20px;
   color: white;
   text-align: center;
   display: inline-block;
@@ -248,6 +253,7 @@ body {
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 6s;
+  -webkit-animation-direction: reverse;
   animation-name: spinner;
   /* указываем на ключевые кадры анимации с названием "spinner" */
   animation-timing-function: linear;
@@ -256,6 +262,7 @@ body {
   /* количество повторов анимации. "infinite" - значит бесконечно */
   animation-duration: 6s;
   /* длительность анимации */
+  animation-direction: reverse;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;

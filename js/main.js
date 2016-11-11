@@ -16,26 +16,26 @@ $(function() {
 
     $(window).resize(function (){
         var $width = $('.block').width();
-        $('.before-block').width($width);
-        $('.after-block').width($width);
+        $('.before-block').width($width - 10);
+        $('.after-block').width($width - 10);
     });
     var $width = $('.block').width();
-    $('.before-block').width($width);
-    $('.after-block').width($width);
+    $('.before-block').width($width - 10);
+    $('.after-block').width($width - 10);
 
     $(window).resize(function (){
         var $width2 = $('.before-block').height();
         var $heightmenu = $('.block').height();
-        $('.test1').width($width2);
-        $('.test2').width($width2);
+        $('.test1').width($width2 * 1);
+        $('.test2').width($width2 * 1);
         $('.lefttabs').height($heightmenu * 0.1);
         $('.news').height($heightmenu * 0.1);
         $('.img-cont').height($heightmenu * 0.6);
     });
     var $width2 = $('.before-block').height();
     var $heightmenu = $('.block').height();
-    $('.test1').width($width2 * 1.5);
-    $('.test2').width($width2 * 1.5);
+    $('.test1').width($width2 * 1);
+    $('.test2').width($width2 * 1);
     $('.lefttabs').height($heightmenu * 0.1);
     $('.news').height($heightmenu * 0.1);
     $('.img-cont').height($heightmenu * 0.6);
