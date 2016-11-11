@@ -1,0 +1,268 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background-size: cover;
+  height: 100%;
+  font-family: Calibri, sans-serif;
+}
+#page-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  z-index: 100500;
+}
+.wrapper-all {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.scale_small {
+  transform: scale(1);
+  overflow-y: auto;
+}
+.wrap {
+  height: 66%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  text-align: center;
+}
+.hidden-kube {
+  visibility: hidden;
+  overflow: hidden;
+}
+.block {
+  height: 100%;
+  margin: auto;
+  display: inline-block;
+}
+.block #kube {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  transition: 0.1s all;
+  display: inline-block;
+  color: white;
+}
+.test2 {
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  background: #000;
+  margin: 0 -0.36em;
+  display: inline-block !important;
+  transform: translateX(-200px);
+}
+.test1 {
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  background: #000;
+  margin: 0 -0.36em;
+  display: inline-block !important;
+  transform: translateX(200px);
+}
+.before-block {
+  height: 17.2%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  display: inline-block !important;
+  transform: translate(-50%, 200px);
+}
+.after-block {
+  height: 17.2%;
+  background: #000;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: -1;
+  display: inline-block !important;
+  transform: translate(-50%, -200px);
+}
+.tab-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  text-align: left;
+}
+.tab-nav .nav-menu {
+  width: auto;
+}
+.tab-nav .nav-menu a {
+  font-size: 18px;
+  font-weight: 500;
+}
+.tab-nav li {
+  float: left;
+  display: block;
+  padding: 5px;
+  text-align: left;
+  width: 90%;
+  margin: 5px 2px 0 5px;
+}
+.tab-nav li a {
+  font: normal 12px Arial, Helvetica, sans-serif;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.tab-nav li:hover {
+  color: white;
+  text-decoration: none;
+}
+.tab-nav li .lefttabs {
+  padding: 10px 0 3px 5px;
+  line-height: 1.5;
+}
+.tab-nav li .lefttabs .title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.tab-nav li .lefttabs span {
+  font-size: 12px;
+}
+.tab-nav li .yellow {
+  background: #ffd000;
+}
+.tab-nav li .green {
+  background: #33b457;
+}
+.tab-nav li .blue {
+  background: #0093d9;
+}
+.tab-nav li .purple {
+  background: #642c90;
+}
+.tab-nav li .red {
+  background: #c62438;
+}
+.tab-nav li .news {
+  line-height: 2.5;
+  padding: 14px 1px 0 5px;
+  background: #2a2a2a;
+}
+.tab-nav li.select a {
+  color: darkblue;
+}
+.tab-nav li.select a.lefttabs {
+  color: black;
+}
+.tab-nav .active {
+  padding: 5px;
+}
+.header-nav {
+  list-style: none;
+  color: white;
+}
+.header-nav li {
+  display: inline;
+}
+.dis-none1,
+.dis-none2 {
+  transform: translateX(0);
+}
+.dis-none3,
+.dis-none4 {
+  transform: translate(-50%, 0);
+  position: absolute;
+  z-index: 1;
+}
+.customer-animate2 {
+  transition: all 1.5s;
+}
+.customer-animate {
+  transition: all 1s;
+}
+.block-logo {
+  height: 60%;
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+.block-logo img {
+  height: 50px;
+  width: auto;
+  padding: 5px;
+}
+.block-menu {
+  height: 40%;
+  width: auto;
+  vertical-align: bottom;
+}
+.main-cont {
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+  float: left;
+}
+.main-cont .img-cont {
+  width: auto;
+  float: left;
+  padding: 15px 15px 15px 0;
+}
+.icon-fa {
+  line-height: 15vh;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+.logo-animate {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  animation-name: spinner;
+  /* указываем на ключевые кадры анимации с названием "spinner" */
+  animation-timing-function: linear;
+  /* функция синхронизации, с помощью которой будут происходить преобразования */
+  animation-iteration-count: infinite;
+  /* количество повторов анимации. "infinite" - значит бесконечно */
+  animation-duration: 6s;
+  /* длительность анимации */
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  /* указываем что это 3D преобразование */
+}
+.logo-animate img {
+  height: 100px;
+  width: auto;
+}
