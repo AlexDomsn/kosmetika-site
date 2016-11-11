@@ -16,12 +16,12 @@ $(function() {
 
     $(window).resize(function (){
         var $width = $('.block').width();
-        $('.before-block').width($width - 10);
-        $('.after-block').width($width - 10);
+        $('.before-block').width($width - 3);
+        $('.after-block').width($width - 3);
     });
     var $width = $('.block').width();
-    $('.before-block').width($width - 10);
-    $('.after-block').width($width - 10);
+    $('.before-block').width($width - 3);
+    $('.after-block').width($width - 3);
 
     $(window).resize(function (){
         var $width2 = $('.before-block').height();
@@ -30,7 +30,7 @@ $(function() {
         $('.test2').width($width2 * 1);
         $('.lefttabs').height($heightmenu * 0.1);
         $('.news').height($heightmenu * 0.1);
-        $('.img-cont').height($heightmenu * 0.6);
+        $('.img-cont').height($heightmenu * 0.5);
     });
     var $width2 = $('.before-block').height();
     var $heightmenu = $('.block').height();
@@ -38,7 +38,7 @@ $(function() {
     $('.test2').width($width2 * 1);
     $('.lefttabs').height($heightmenu * 0.1);
     $('.news').height($heightmenu * 0.1);
-    $('.img-cont').height($heightmenu * 0.6);
+    $('.img-cont').height($heightmenu * 0.5);
 
 
 

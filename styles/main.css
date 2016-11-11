@@ -60,19 +60,20 @@ body {
 .test2 {
   position: relative;
   z-index: -1;
-  height: 100%;
+  height: 99.9%;
   background: #000;
   margin: 0 -0.36em;
   display: inline-block !important;
   transform: translateX(-200px);
 }
 .test2 li {
-  width: 90%;
+  width: 95%;
+  margin: 5px 2px 0 -4px;
 }
 .test1 {
   position: relative;
   z-index: -1;
-  height: 100%;
+  height: 99.9%;
   background: #000;
   margin: 0 -0.36em;
   display: inline-block !important;
@@ -80,6 +81,7 @@ body {
 }
 .test1 li {
   width: 100%;
+  margin: 5px 2px 0 5px;
 }
 .before-block {
   height: 18.1%;
@@ -122,7 +124,6 @@ body {
   display: block;
   padding: 5px;
   text-align: left;
-  margin: 5px 2px 0 5px;
 }
 .tab-nav li a {
   font: normal 12px Arial, Helvetica, sans-serif;
@@ -174,12 +175,27 @@ body {
 .tab-nav .active {
   padding: 5px;
 }
+.left-block-menu {
+  float: left;
+}
 .header-nav {
   list-style: none;
   color: white;
 }
 .header-nav li {
   display: inline;
+}
+.search-block {
+  display: inline-block;
+  float: right !important;
+}
+.search-block .search-btn {
+  max-height: 18px;
+  width: auto;
+  margin: 5px 20px 0 0;
+  float: right !important;
+  display: inline-block;
+  vertical-align: bottom;
 }
 .dis-none1,
 .dis-none2 {
@@ -198,7 +214,7 @@ body {
   transition: all 1s;
 }
 .block-logo {
-  height: 60%;
+  height: 70%;
   width: auto;
   text-align: center;
   margin: 0 auto;
@@ -209,14 +225,14 @@ body {
   padding: 5px;
 }
 .block-menu {
-  height: 40%;
+  height: 30%;
   width: auto;
   vertical-align: bottom;
 }
 .main-cont {
   padding: 15px;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: justify;
   float: left;
 }
 .main-cont .img-cont {
@@ -249,27 +265,40 @@ body {
   position: absolute;
   top: 0;
   left: 5%;
-  -webkit-animation-name: spinner;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 6s;
-  -webkit-animation-direction: reverse;
-  animation-name: spinner;
-  /* указываем на ключевые кадры анимации с названием "spinner" */
-  animation-timing-function: linear;
-  /* функция синхронизации, с помощью которой будут происходить преобразования */
-  animation-iteration-count: infinite;
-  /* количество повторов анимации. "infinite" - значит бесконечно */
-  animation-duration: 6s;
-  /* длительность анимации */
-  animation-direction: reverse;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  /* указываем что это 3D преобразование */
 }
 .logo-animate img {
   height: 100px;
   width: auto;
+}
+.logo-animate .loader {
+  -webkit-animation: preloader 6s infinite linear reverse;
+  -moz-animation: preloader 6s infinite linear reverse;
+  -ms-animation: preloader 6s infinite linear reverse;
+  -o-animation: preloader 6s infinite linear reverse;
+  animation: preloader 6s infinite linear reverse;
+}
+@-webkit-keyframes preloader {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes preloader {
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes preloader {
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes preloader {
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes preloader {
+  to {
+    transform: rotate(360deg);
+  }
 }
