@@ -16,12 +16,12 @@ $(function() {
 
     $(window).resize(function (){
         var $width = $('.block').width();
-        $('.before-block').width($width - 3);
-        $('.after-block').width($width - 3);
+        $('.before-block').width($width);
+        $('.after-block').width($width);
     });
     var $width = $('.block').width();
-    $('.before-block').width($width - 3);
-    $('.after-block').width($width - 3);
+    $('.before-block').width($width );
+    $('.after-block').width($width );
 
     $(window).resize(function (){
         var $width2 = $('.before-block').height();

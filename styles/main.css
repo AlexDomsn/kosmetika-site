@@ -31,7 +31,7 @@ body {
   overflow-y: auto;
 }
 .wrap {
-  height: 64.1%;
+  height: 64%;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -60,9 +60,8 @@ body {
 .test2 {
   position: relative;
   z-index: -1;
-  height: 99.9%;
+  height: 99.95%;
   background: #000;
-  margin: 0 -0.36em;
   display: inline-block !important;
   transform: translateX(-200px);
 }
@@ -73,18 +72,18 @@ body {
 .test1 {
   position: relative;
   z-index: -1;
-  height: 99.9%;
+  height: 99.95%;
   background: #000;
-  margin: 0 -0.36em;
   display: inline-block !important;
   transform: translateX(200px);
 }
 .test1 li {
-  width: 100%;
+  width: 90%;
   margin: 5px 2px 0 5px;
 }
 .before-block {
-  height: 18.1%;
+  height: 18%;
+  margin-top: -0.16em;
   background: #000;
   position: absolute;
   top: 0;
@@ -94,7 +93,9 @@ body {
   transform: translate(-50%, 200px);
 }
 .after-block {
-  height: 18.1%;
+  height: 18%;
+  margin-top: -0.16em;
+  margin-bottom: -0.36em;
   background: #000;
   text-align: center;
   vertical-align: middle;
@@ -233,12 +234,21 @@ body {
   padding: 15px;
   margin-bottom: 20px;
   text-align: justify;
+  font-size: 14px;
   float: left;
 }
 .main-cont .img-cont {
   width: auto;
   float: left;
   padding: 15px 15px 15px 0;
+}
+.main-title {
+  text-align: center;
+  font-weight: 800;
+}
+.title-desc {
+  font-weight: 900;
+  font-size: 15px;
 }
 .icon-fa {
   line-height: 25vh;
