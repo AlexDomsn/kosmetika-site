@@ -34,7 +34,7 @@ body {
   overflow-y: auto;
 }
 .wrap {
-  height: 64%;
+  height: 74.1%;
   width:100%;
   position: absolute;
   top: 50%;
@@ -67,10 +67,10 @@ body {
   height: 99.95%;
   background: #000;
   display:inline-block !important;
-  transform: translateX(-200px);
+  transform: translateX(-300px);
   li {
-    width:95%;
-    margin: 5px 2px 0 -4px;
+    width:88%;
+    margin: 5px 2px 0 5px;
   }
 }
 .test1 {
@@ -79,15 +79,15 @@ body {
   height: 99.95%;
   background: #000;
   display:inline-block !important;
-  transform: translateX(200px);
+  transform: translateX(300px);
   li {
-    width:90%;
+    width:88%;
     margin: 5px 2px 0 5px;
   }
 }
 
 .before-block {
-  height:18%;
+  height:13%;
   margin-top:-.16em;
   background: #000;
   position: absolute;
@@ -98,7 +98,7 @@ body {
   transform: translate(-50%, 200px);
 }
 .after-block {
-  height:18%;
+  height:13%;
   margin-bottom:-.16em;
   background: #000;
   text-align: center;
@@ -152,6 +152,19 @@ body {
         font-size:9px;
       }
     }
+    .circle {
+      border:0 solid transparent;
+      border-radius: 50%;
+      text-align: center;
+      margin:0 auto;
+      vertical-align: middle;
+      .title {
+        font-size:12px;
+        font-weight:600;
+        line-height:100px;
+        color: black;
+      }
+    }
     .yellow {
       background: #ffd000;
     }
@@ -166,6 +179,9 @@ body {
     }
     .red {
       background: #c62438;
+    }
+    .white {
+      background: white;
     }
     .news {
       line-height:2.5;
@@ -268,7 +284,7 @@ body {
 }
 
 .icon-fa {
-  line-height:25vh;
+  line-height:15vh;
   font-size:20px;
   color: white;
   text-align: center;
@@ -300,50 +316,50 @@ body {
     width:auto;
   }
 
-  .loader{
-    -webkit-animation: preloader 6s infinite linear reverse;
-    -moz-animation: preloader 6s infinite linear reverse;
-    -ms-animation: preloader 6s infinite linear reverse;
-    -o-animation: preloader 6s infinite linear reverse;
-    animation: preloader 6s infinite linear reverse;
-  }
-
-  @-webkit-keyframes preloader {
-    to { -webkit-transform: rotate(360deg); }
-  }
-
-  @-moz-keyframes preloader {
-    to { -moz-transform: rotate(360deg); }
-  }
-
-  @-ms-keyframes preloader {
-    to { -ms-transform: rotate(360deg); }
-  }
-
-  @-o-keyframes preloader {
-    to { -o-transform: rotate(360deg); }
-  }
-
-  @keyframes preloader {
-    to { transform: rotate(360deg); }
-  }
-
-
-
-  //-webkit-animation-name: spinner;
-  //-webkit-animation-timing-function: linear;
-  //-webkit-animation-iteration-count: infinite;
-  //-webkit-animation-duration: 6s;
-  //-webkit-animation-direction: reverse;
+  //.loader{
+  //  -webkit-animation: preloader 6s infinite linear reverse;
+  //  -moz-animation: preloader 6s infinite linear reverse;
+  //  -ms-animation: preloader 6s infinite linear reverse;
+  //  -o-animation: preloader 6s infinite linear reverse;
+  //  animation: preloader 6s infinite linear reverse;
+  //}
   //
-  //animation-name: spinner;  /* указываем на ключевые кадры анимации с названием "spinner" */
-  //animation-timing-function: linear; /* функция синхронизации, с помощью которой будут происходить преобразования */
-  //animation-iteration-count: infinite; /* количество повторов анимации. "infinite" - значит бесконечно */
-  //animation-duration: 6s; /* длительность анимации */
-  //animation-direction: reverse;
+  //@-webkit-keyframes preloader {
+  //  to { -webkit-transform: rotate(360deg); }
+  //}
   //
-  //-webkit-transform-style: preserve-3d;
-  //-moz-transform-style: preserve-3d;
-  //-ms-transform-style: preserve-3d;
-  //transform-style: preserve-3d; /* указываем что это 3D преобразование */
+  //@-moz-keyframes preloader {
+  //  to { -moz-transform: rotate(360deg); }
+  //}
+  //
+  //@-ms-keyframes preloader {
+  //  to { -ms-transform: rotate(360deg); }
+  //}
+  //
+  //@-o-keyframes preloader {
+  //  to { -o-transform: rotate(360deg); }
+  //}
+  //
+  //@keyframes preloader {
+  //  to { transform: rotate(360deg); }
+  //}
+
+
+
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-direction: reverse;
+
+  animation-name: spinner;  /* указываем на ключевые кадры анимации с названием "spinner" */
+  animation-timing-function: linear; /* функция синхронизации, с помощью которой будут происходить преобразования */
+  animation-iteration-count: infinite; /* количество повторов анимации. "infinite" - значит бесконечно */
+  animation-duration: 6s; /* длительность анимации */
+  animation-direction: reverse;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d; /* указываем что это 3D преобразование */
 }

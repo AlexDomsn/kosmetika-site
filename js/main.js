@@ -26,19 +26,23 @@ $(function() {
     $(window).resize(function (){
         var $width2 = $('.before-block').height();
         var $heightmenu = $('.block').height();
-        $('.test1').width($width2 * 1);
-        $('.test2').width($width2 * 1);
-        $('.lefttabs').height($heightmenu * 0.1);
-        $('.news').height($heightmenu * 0.1);
+        $('.test1').width($width2 * 2);
+        $('.test2').width($width2 * 2);
+        $('.lefttabs').height($heightmenu * 0.075);
+        $('.news').height($heightmenu * 0.075);
         $('.img-cont').height($heightmenu * 0.5);
+        $('.circle').height($heightmenu * 0.2);
+        $('.circle').width($heightmenu * 0.2);
     });
     var $width2 = $('.before-block').height();
     var $heightmenu = $('.block').height();
-    $('.test1').width($width2 * 1);
-    $('.test2').width($width2 * 1);
-    $('.lefttabs').height($heightmenu * 0.1);
-    $('.news').height($heightmenu * 0.1);
+    $('.test1').width($width2 * 2);
+    $('.test2').width($width2 * 2);
+    $('.lefttabs').height($heightmenu * 0.075);
+    $('.news').height($heightmenu * 0.075);
     $('.img-cont').height($heightmenu * 0.5);
+    $('.circle').height($heightmenu * 0.2);
+    $('.circle').width($heightmenu * 0.2);
 
 
 
