@@ -31,7 +31,7 @@ body {
   overflow-y: auto;
 }
 .wrap {
-  height: 79.1%;
+  height: 75.1%;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -93,7 +93,7 @@ body {
   margin: 5px 2px 0 5px;
 }
 .before-block {
-  height: 10.5%;
+  height: 12.5%;
   margin-top: -0.16em;
   background: #000;
   position: absolute;
@@ -104,7 +104,7 @@ body {
   transform: translate(-50%, 200px);
 }
 .after-block {
-  height: 10.5%;
+  height: 12.5%;
   margin-bottom: -0.16em;
   background: #000;
   text-align: center;
@@ -278,13 +278,19 @@ body {
 .main-title {
   text-align: center;
   font-weight: 800;
+  font-size: 24px;
 }
 .title-desc {
   font-weight: 900;
-  font-size: 15px;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.awesome {
+  font-weight: 900;
+  font-size: 18px;
 }
 .icon-fa {
-  line-height: 10vh;
+  line-height: 13vh;
   font-size: 20px;
   color: white;
   text-align: center;
