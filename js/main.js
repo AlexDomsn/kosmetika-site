@@ -8,6 +8,13 @@
     });
 
 
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    });
+
+
+
 $(function() {
     $(window).resize(function (){
         $('.block').width($('.block').height());
@@ -26,8 +33,8 @@ $(function() {
     $(window).resize(function (){
         var $width2 = $('.before-block').height();
         var $heightmenu = $('.block').height();
-        $('.test1').width($width2 * 2);
-        $('.test2').width($width2 * 2);
+        $('.test1').width($width2 * 1.8);
+        $('.test2').width($width2 * 1.8);
         $('.lefttabs').height($heightmenu * 0.075);
         $('.news').height($heightmenu * 0.075);
         $('.img-cont').height($heightmenu * 0.5);
@@ -36,20 +43,31 @@ $(function() {
     });
     var $width2 = $('.before-block').height();
     var $heightmenu = $('.block').height();
-    $('.test1').width($width2 * 2);
-    $('.test2').width($width2 * 2);
+    $('.test1').width($width2 * 1.8);
+    $('.test2').width($width2 * 1.8);
     $('.lefttabs').height($heightmenu * 0.075);
     $('.news').height($heightmenu * 0.075);
     $('.img-cont').height($heightmenu * 0.5);
     $('.circle').height($heightmenu * 0.2);
     $('.circle').width($heightmenu * 0.2);
 
+    var button = $('#button');
+    button.on('click',function(event){
+        if(!button.hasClass('notClick')) {
+
+
+            button.addClass('notClick');
+            setTimeout(function() {
+                button.removeClass('notClick');
+            }, 2000);
+        }
+    });
 
 
     var $hid = $(".media-cont");
     $(".logo-animate").click(function(){
         if ($(".media-cont").hasClass("hidden-kube")) {
-             $hid.removeClass("hidden-kube");
+            $hid.removeClass("hidden-kube");
             $(".media-cont").fadeIn(2000);
         }
         else {
@@ -108,7 +126,19 @@ $(function() {
             $('.tab-panels>.media-cont>div').hide().filter(this.hash).show();   // - показывается блок с описанием текущей вкладки
             $('.tab-nav li').removeClass('select');                 // - удаляется класс 'select' у активной ранее вкладки
             $(this).parent().addClass('select');                    // - добавляется класс 'select' для выбранной вкладки
+            // $('.scale_small').animate({scrollTop: 0}, 1500);
             return (false);                                         // - прерывается обработка события onClick
-        })
-    })
+        });
+    });
+
+    $('[href^="#"]').on("click", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('.scale_small').animate({scrollTop: 0}, 100);
+    });
 });

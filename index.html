@@ -9,9 +9,12 @@
     <title>Astarta</title>
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="bower_components/animate.css">
+    <link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="bower_components/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
     <script src="bower_components/jquery-css-transform.js"></script>
     <script src="bower_components/jquery-animate-css-rotate-scale.js"></script>
     <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
@@ -41,7 +44,7 @@
                   </div>
               </div>
               <div class="wrap">
-                  <div class="logo-animate">
+                  <div id="button" class="logo-animate">
                       <img src="images/logo-01.png" class="loader" alt="">
                   </div>
                   <div id="test1"  class="test1 customer-animate">
@@ -133,13 +136,19 @@
                                     Регистрационный номер декларации о соответствии: ТС N RU Д-RU.АГ96.В.08526 <br>
                                     И действительна с 10.08.2016 по 09.08.2021 <br>
                                     В серии «Пятая Стихия» использован запатентованный метод экстрагирования лекарственных растений:
-                                    <br>
-                                    1)	Патент на полезную модель «Косметическое средство на натуральной основе»  № 79722 от 25.04.2013;
-                                    <br>
-                                    2)	Патент на полезную модель «Способ получения растительных экстрактов» <br>
-                                    № 81730 от 10.07.2013
-
                                 </p>
+                                <p class="patent">
+                                    1)	Патент на полезную модель «Косметическое средство на натуральной основе»  № 79722 от 25.04.2013;
+                                </p>
+                                <a href="images/patent-1.jpg"  data-lightbox="image-1">
+                                    <img class="patent-img" src="images/patent-1.jpg" alt="patent">
+                                </a>
+                                <p class="patent">
+                                    2)	Патент на полезную модель «Способ получения растительных экстрактов» № 81730 от 10.07.2013
+                                </p>
+                                <a href="images/patent-2.jpg"  data-lightbox="image-1">
+                                    <img class="patent-img" src="images/patent-2.jpg" alt="patent">
+                                </a>
                             </div>
                             <div id="t5" class="main-cont">
                                 <img src="images/Naturextrin_Artemisia_45x55mm.jpg" class="img-cont"  alt="polyn">
@@ -475,11 +484,11 @@
                             </div>
                             <div id="t13" class="main-cont">
                                 <h2 class="title-circle">Партнеры:</h2>
-                                <ul class="circle-li">
-                                    <li>Интернет магазин «Благодей»</li>
-                                    <li>Магазин аюрведы «Tabarishop»</li>
-                                    <li>ООО «Детективное Бюро»</li>
+                                <ul class="circle-li" >
                                     <li>Всемирная Академия Наук - Борис Васильевич Болотов</li>
+                                    <li>ООО «Детективное Бюро»</li>
+                                    <li>Магазин аюрведы «Tabarishop»</li>
+                                    <li>Интернет магазин «Благодей»</li>
                                 </ul>
                             </div>
                         </div>
