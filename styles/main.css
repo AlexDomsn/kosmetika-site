@@ -208,6 +208,7 @@ body {
 .header-nav {
   list-style: none;
   color: white;
+  margin-left: 20px;
 }
 .header-nav li {
   display: inline;
