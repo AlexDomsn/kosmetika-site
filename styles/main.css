@@ -133,22 +133,50 @@ body {
 .tab-nav li {
   float: left;
   display: block;
-  padding: 5px;
   text-align: left;
+}
+.tab-nav li #carousel_1 {
+  height: 95%;
+  position: relative;
+}
+.tab-nav li #carousel_1 .lefttabs {
+  margin: 7px auto;
+}
+.tab-nav li #carousel_1 .arrow_cont {
+  position: absolute;
+  margin: auto 0;
+  display: block;
+  transform: translateY(50%);
+  z-index: 999;
+}
+.tab-nav li #carousel_1 .arrow_cont.prev {
+  left: 30px;
+  top: -80px;
+}
+.tab-nav li #carousel_1 .arrow_cont.next {
+  left: 30px;
+  bottom: -20px;
+}
+.tab-nav li #carousel_1 .customer_arrow {
+  height: 50px;
+  width: auto;
+}
+.tab-nav li #carousel_1 .customer_arrow:hover {
+  opacity: 0.5;
 }
 .tab-nav li a {
   font: normal 12px Arial, Helvetica, sans-serif;
   color: white;
   display: block;
   text-decoration: none;
+  padding: 5px;
 }
 .tab-nav li:hover {
   color: white;
   text-decoration: none;
 }
 .tab-nav li .lefttabs {
-  padding: 10px 0 3px 5px;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 .tab-nav li .lefttabs .title {
   font-size: 12px;
@@ -167,7 +195,7 @@ body {
 .tab-nav li .circle .title {
   font-size: 12px;
   font-weight: 600;
-  line-height: 100px;
+  line-height: 90px;
   color: black;
 }
 .tab-nav li .yellow {
@@ -193,6 +221,9 @@ body {
   padding: 14px 1px 0 5px;
   background: #2a2a2a;
 }
+.after-circle {
+  margin-bottom: 60px !important;
+}
 .tab-nav li.select a {
   color: steelblue;
 }
@@ -208,6 +239,7 @@ body {
 .header-nav {
   list-style: none;
   color: white;
+  display: none;
   margin-left: 20px;
 }
 .header-nav li {

@@ -63,6 +63,18 @@ $(function() {
         }
     });
 
+    $('#carousel_1').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll:1,
+        adaptiveHeight: true,
+        verticalSwiping: true,
+        dots: false,
+        vertical: true,
+        prevArrow: '<a href="#" class="arrow_cont prev"><img src="images/left_arrow.png" alt="" class="customer_arrow" /></a>',
+        nextArrow: '<a href="#" class="arrow_cont next"><img src="images/right_arrow.png" alt=""  class="customer_arrow" /></a>'
+    });
 
     var $hid = $(".media-cont");
     $(".logo-animate").click(function(){

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="bower_components/animate.css">
     <link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
@@ -18,6 +20,7 @@
     <script src="bower_components/jquery-css-transform.js"></script>
     <script src="bower_components/jquery-animate-css-rotate-scale.js"></script>
     <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -50,13 +53,79 @@
                   </div>
                   <div id="test1"  class="test1 customer-animate">
                       <ul class="tab-nav">
-                          <li><a href="#t12" class="white circle"><span class="title">Деятельность</span></a></li>
+                          <li class="after-circle"><a href="#t12" class="white circle"><span class="title">Деятельность</span></a></li>
 
-                          <li><a href="#t4" class="yellow lefttabs"><span class="title">Тысячелистник</span> <br> <span>Achillea millefolium</span></a></li>
-                          <li><a href="#t5" class="green lefttabs"><span class="title">Полынь</span> <br> <span>Artemisia</span></a></li>
-                          <li><a href="#t8" class="blue lefttabs"><span class="title">Живокост</span> <br> <span>Symphytum officinale L.</span></a></li>
-                          <li><a href="#t6" class="purple lefttabs"><span class="title">Очанка</span> <br> <span>Euphrasia officialis</span></a></li>
-                          <li><a href="#t7" class="red lefttabs"><span class="title">Мускат</span> <br> <span>Myristica fragrans</span></a></li>
+                          <li>
+                              <div id="carousel_1">
+
+                                  <div>
+                                      <a href="#t4" class="yellow lefttabs"><span class="title">Тысячелистник</span> <br> <span>Achillea millefolium</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t5" class="green lefttabs"><span class="title">Полынь</span> <br> <span>Artemisia</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t8" class="blue lefttabs"><span class="title">Живокост</span> <br> <span>Symphytum officinale L.</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t6" class="purple lefttabs"><span class="title">Очанка</span> <br> <span>Euphrasia officialis</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t7" class="red lefttabs"><span class="title">Мускат</span> <br> <span>Myristica fragrans</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t4" class="yellow lefttabs"><span class="title">Тысячелистник</span> <br> <span>Achillea millefolium</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t5" class="green lefttabs"><span class="title">Полынь</span> <br> <span>Artemisia</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t8" class="blue lefttabs"><span class="title">Живокост</span> <br> <span>Symphytum officinale L.</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t6" class="purple lefttabs"><span class="title">Очанка</span> <br> <span>Euphrasia officialis</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t7" class="red lefttabs"><span class="title">Мускат</span> <br> <span>Myristica fragrans</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t4" class="yellow lefttabs"><span class="title">Тысячелистник</span> <br> <span>Achillea millefolium</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t5" class="green lefttabs"><span class="title">Полынь</span> <br> <span>Artemisia</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t8" class="blue lefttabs"><span class="title">Живокост</span> <br> <span>Symphytum officinale L.</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t6" class="purple lefttabs"><span class="title">Очанка</span> <br> <span>Euphrasia officialis</span></a>
+                                  </div>
+                                  <div>
+                                      <a href="#t7" class="red lefttabs"><span class="title">Мускат</span> <br> <span>Myristica fragrans</span></a>
+                                  </div>
+                                  <!--<ul>-->
+                                      <!--<li><a href="#t4" class="yellow lefttabs"><span class="title">Тысячелистник</span> <br> <span>Achillea millefolium</span></a></li>-->
+                                      <!--<li><a href="#t5" class="green lefttabs"><span class="title">Полынь</span> <br> <span>Artemisia</span></a></li>-->
+                                      <!--<li><a href="#t8" class="blue lefttabs"><span class="title">Живокост</span> <br> <span>Symphytum officinale L.</span></a></li>-->
+                                      <!--<li><a href="#t6" class="purple lefttabs"><span class="title">Очанка</span> <br> <span>Euphrasia officialis</span></a></li>-->
+                                      <!--<li><a href="#t7" class="red lefttabs"><span class="title">Мускат</span> <br> <span>Myristica fragrans</span></a></li>-->
+
+                                      <!--<li><a href="#t4" class="yellow lefttabs"><span class="title">Тысячелистник</span> <br> <span>Achillea millefolium</span></a></li>-->
+                                      <!--<li><a href="#t5" class="green lefttabs"><span class="title">Полынь</span> <br> <span>Artemisia</span></a></li>-->
+                                      <!--<li><a href="#t8" class="blue lefttabs"><span class="title">Живокост</span> <br> <span>Symphytum officinale L.</span></a></li>-->
+                                      <!--<li><a href="#t6" class="purple lefttabs"><span class="title">Очанка</span> <br> <span>Euphrasia officialis</span></a></li>-->
+                                      <!--<li><a href="#t7" class="red lefttabs"><span class="title">Мускат</span> <br> <span>Myristica fragrans</span></a></li>-->
+
+                                      <!--<li><a href="#t4" class="yellow lefttabs"><span class="title">Тысячелистник</span> <br> <span>Achillea millefolium</span></a></li>-->
+                                      <!--<li><a href="#t5" class="green lefttabs"><span class="title">Полынь</span> <br> <span>Artemisia</span></a></li>-->
+                                      <!--<li><a href="#t8" class="blue lefttabs"><span class="title">Живокост</span> <br> <span>Symphytum officinale L.</span></a></li>-->
+                                      <!--<li><a href="#t6" class="purple lefttabs"><span class="title">Очанка</span> <br> <span>Euphrasia officialis</span></a></li>-->
+                                      <!--<li><a href="#t7" class="red lefttabs"><span class="title">Мускат</span> <br> <span>Myristica fragrans</span></a></li>-->
+
+                                  <!--</ul>-->
+                              </div>
+                          </li>
+
                       </ul>
                   </div>
                   <div class="block ">
