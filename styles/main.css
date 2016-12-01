@@ -164,11 +164,11 @@ body {
 }
 .tab-nav li #carousel_1 .arrow_cont.prev {
   left: 0;
-  top: -55px;
+  top: -18%;
 }
 .tab-nav li #carousel_1 .arrow_cont.next {
   left: 0;
-  bottom: -25px;
+  bottom: -9%;
   transform: rotateX(180deg);
 }
 .tab-nav li #carousel_1 .customer_arrow {
