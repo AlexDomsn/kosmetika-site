@@ -40,6 +40,7 @@ $(function() {
         $('.img-cont').height($heightmenu * 0.5);
         $('.circle').height($heightmenu * 0.2);
         $('.circle').width($heightmenu * 0.2);
+        $(".customer_arrow").height($heightmenu * 0.07);
     });
     var $width2 = $('.before-block').height();
     var $heightmenu = $('.block').height();
@@ -50,6 +51,7 @@ $(function() {
     $('.img-cont').height($heightmenu * 0.5);
     $('.circle').height($heightmenu * 0.2);
     $('.circle').width($heightmenu * 0.2);
+    $(".customer_arrow").height($heightmenu * 0.07);
 
     var button = $('#button');
     button.on('click',function(event){
@@ -66,7 +68,7 @@ $(function() {
     $('#carousel_1').slick({
         infinite: true,
         speed: 300,
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll:1,
         adaptiveHeight: true,
         verticalSwiping: true,
