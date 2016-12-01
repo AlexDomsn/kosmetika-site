@@ -46,7 +46,7 @@ $(function() {
     var $heightmenu = $('.block').height();
     $('.test1').width($width2 * 1.8);
     $('.test2').width($width2 * 1.8);
-    $('.lefttabs').height($heightmenu * 0.075);
+    $('.lefttabs').height($heightmenu * 0.065);
     $('.news').height($heightmenu * 0.075);
     $('.img-cont').height($heightmenu * 0.5);
     $('.circle').height($heightmenu * 0.2);
