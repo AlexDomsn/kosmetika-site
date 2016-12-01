@@ -168,7 +168,7 @@ body {
 }
 .tab-nav li #carousel_1 .arrow_cont.next {
   left: 0;
-  bottom: -15%;
+  bottom: -14%;
   transform: rotateX(180deg);
 }
 .tab-nav li #carousel_1 .customer_arrow {
@@ -241,7 +241,7 @@ body {
   background: #2a2a2a;
 }
 .after-circle {
-  margin-bottom: 30px !important;
+  margin-bottom: 17% !important;
 }
 .tab-nav li.select a {
   color: steelblue;
