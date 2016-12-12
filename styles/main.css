@@ -269,12 +269,25 @@ body {
   float: right !important;
 }
 .search-block .search-btn {
-  max-height: 18px;
-  width: auto;
-  margin: 5px 20px 0 0;
+  margin: -2px 15px 0 0;
+  padding: 1px 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+  border: 1px solid white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   float: right !important;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: center;
+  transition: 0.5s all;
+}
+.search-block .search-btn:hover {
+  color: orange;
+  border-color: orange;
+  text-decoration: none;
 }
 .dis-none1,
 .dis-none2 {
