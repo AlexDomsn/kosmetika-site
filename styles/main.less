@@ -223,7 +223,7 @@ body {
       .title {
         font-size:12px;
         font-weight:600;
-        line-height:90px;
+        line-height:100px;
         color: black;
       }
     }
@@ -356,6 +356,28 @@ body {
   ul {
     li {
       margin-bottom:20px;
+    }
+  }
+  .tab-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    margin:auto;
+    text-align: center;
+    li {
+      display: block;
+      float: none;
+      text-align: center;
+      margin:10px auto;
+      .product {
+        padding:15px 60px;
+        background: rgba(100, 100, 200, 0.63);
+        &:hover {
+          background: rgba(100, 100, 200, 1);
+        }
+      }
     }
   }
 }
@@ -494,3 +516,15 @@ body {
   transform-style: preserve-3d; /* указываем что это 3D преобразование */
 }
 
+.consultation {
+  font-size:20px;
+  font-weight:500;
+  line-height:1.4;
+  color: white;
+}
+.bolotov  {
+  font-size:18px;
+  font-weight:500;
+  line-height:1.4;
+  color: white;
+}

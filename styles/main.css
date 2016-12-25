@@ -214,7 +214,7 @@ body {
 .tab-nav li .circle .title {
   font-size: 12px;
   font-weight: 600;
-  line-height: 90px;
+  line-height: 100px;
   color: black;
 }
 .tab-nav li .yellow {
@@ -336,6 +336,28 @@ body {
 .main-cont ul li {
   margin-bottom: 20px;
 }
+.main-cont .tab-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  margin: auto;
+  text-align: center;
+}
+.main-cont .tab-nav li {
+  display: block;
+  float: none;
+  text-align: center;
+  margin: 10px auto;
+}
+.main-cont .tab-nav li .product {
+  padding: 15px 60px;
+  background: rgba(100, 100, 200, 0.63);
+}
+.main-cont .tab-nav li .product:hover {
+  background: #6464c8;
+}
 .circle-li li {
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -438,4 +460,16 @@ body {
 .logo-animate img {
   height: 100px;
   width: auto;
+}
+.consultation {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: white;
+}
+.bolotov {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: white;
 }
