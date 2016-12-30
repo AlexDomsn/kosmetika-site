@@ -358,9 +358,26 @@ body {
 .main-cont .tab-nav li .product:hover {
   background: #6464c8;
 }
+.circle-li {
+  list-style: none;
+  display: block;
+  text-align: center;
+}
 .circle-li li {
   margin-bottom: 15px;
-  padding-bottom: 15px;
+  margin-left: 15px;
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+.circle-li li img {
+  width: auto;
+  height: 100px;
+  transform: scale(0.8);
+  transition: all 0.4s;
+}
+.circle-li li img:hover {
+  transform: scale(1);
 }
 .patent-img {
   height: 100px;
@@ -462,7 +479,7 @@ body {
   width: auto;
 }
 .consultation {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
   color: white;
@@ -472,4 +489,16 @@ body {
   font-weight: 500;
   line-height: 1.4;
   color: white;
+}
+.bolotov-desc {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.4;
+  color: white;
+}
+.view-source a {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
 }
