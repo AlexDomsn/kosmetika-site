@@ -376,7 +376,16 @@ body {
   transform: scale(0.8);
   transition: all 0.4s;
 }
-.circle-li li img:hover {
+.circle-li li .PartnerLink {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.circle-li li .PartnerLink:hover {
+  text-decoration: none;
+}
+.circle-li li .PartnerLink:hover img {
   transform: scale(1);
 }
 .patent-img {
@@ -500,5 +509,40 @@ body {
   color: white;
   font-size: 22px;
   font-weight: 700;
+  line-height: 1.4;
+}
+.ProductElement {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.ProductElement img {
+  width: auto;
+  height: 120px;
+}
+.ProductImg {
+  width: auto;
+  height: 200px;
+  float: left;
+  padding: 30px 15px 10px 15px;
+}
+.Coments {
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.Coments .ComentsName {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.Coments .Coment {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
   line-height: 1.4;
 }
