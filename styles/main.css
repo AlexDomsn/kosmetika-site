@@ -527,6 +527,11 @@ body {
   float: left;
   padding: 30px 15px 10px 15px;
 }
+.ProductImgCenter {
+  float: none !important;
+  text-align: center;
+  margin: 0 auto;
+}
 .Coments {
   border: 2px solid rgba(128, 128, 128, 0.5);
   border-radius: 8px;
@@ -545,4 +550,12 @@ body {
   font-size: 16px;
   color: white;
   line-height: 1.4;
+}
+.datatime {
+  color: rgba(128, 128, 128, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  float: right;
+  margin-top: 5px;
 }
