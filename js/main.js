@@ -39,33 +39,3 @@ $(function(){
     });
 });
 
-$(function(){
-    var images = {};
-
-    images["id01"] = new Image();
-    images["id01"].src = 'image/style_item1.png';
-
-    images["id02"] = new Image();
-    images["id02"].src = 'image/style_item1.png';
-
-    images["id03"] = new Image();
-    images["id03"].src = 'image/maniken.png';
-
-    images["id04"] = new Image();
-    images["id04"].src = 'image/maniken.png';
-
-    images["id05"] = new Image();
-    images["id05"].src = 'image/maniken.png';
-
-    images["id06"] = new Image();
-    images["id06"].src = 'image/maniken.png';
-
-    $(function () {
-        $("#kurtki_item").buttonset();
-    });
-
-    $('.shop-config input').click(function () {
-        var colourId = $("#kurtki_item input:checked").attr("id");
-        $("#container #image img").attr("src", images[colourId].src);
-    });
-});
