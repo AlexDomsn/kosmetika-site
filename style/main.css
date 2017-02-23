@@ -276,7 +276,7 @@ body {
   background: #282828;
   background-image: url("../image/history_face.png");
   background-size: auto;
-  background-position: 20rem bottom;
+  background-position: 0 bottom !important;
   background-repeat: no-repeat;
 }
 .history_text {
@@ -345,6 +345,11 @@ body {
   .history_text .text_author {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1170px) {
+  .history {
+    background-position: -9rem bottom !important;
   }
 }
 .features {
