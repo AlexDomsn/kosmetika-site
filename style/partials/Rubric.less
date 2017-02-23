@@ -1,0 +1,136 @@
+.rubric {
+  padding: 10rem 0;
+}
+.rubric_item {
+  &:hover, &:focus, &:active {
+    img {
+      transform: scale(1.15);
+      box-shadow: 0 0 46.7px 10.3px rgba(0, 0, 0, 0.34), 0 0 14.6px 1.4px transparent;
+    }
+    .rubric_element-text {
+      a {
+        color: #070707;
+        padding: 1.7rem 2rem 1.6rem 5.6rem;
+        background: #ff9800;
+        border-radius: 25px;
+        box-shadow: 0 12px 27.8px 4.2px rgba(255, 152, 0, 0.19);
+        text-decoration: none;
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.rubric_element {
+  position: relative;
+  transition: all 1s;
+  img {
+    width: 27rem;
+    height: 38rem;
+    transition: all 1s;
+  }
+}
+.rubric_element-text {
+  margin: auto;
+  position: absolute;
+  bottom: 2.3rem;
+  left: 0;
+  right: 0;;
+  text-align: center;
+  a {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    transition: all 1s;
+    padding: 1.7rem 2rem 1.6rem 5.6rem;
+    background: transparent;
+    border-radius: 25px;
+    box-shadow: 0 12px 27.8px 4.2px rgba(255, 152, 0, 0);
+    text-decoration: none;
+    vertical-align: text-top;
+    &:after {
+      opacity: 0;
+      content: url("../image/btn.png");
+      vertical-align: bottom;
+      margin-left: 2.6rem;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .rubric_element {
+    height: 20rem !important;
+  }
+}
+@media (min-width: 426px) and (max-width: 600px) {
+  .rubric_element {
+    height: 30rem !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .rubric_element {
+    height: 38rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .rubric_element-text {
+    bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .rubric {
+    padding-top:3.5rem;
+    padding-bottom:0;
+  }
+
+  .rubric_element {
+    height: 20rem;
+    overflow: hidden;
+    margin:0 auto 6rem;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover, &:focus, &:active {
+      img {
+        transform: none;
+      }
+      .rubric_element-text {
+        a {
+          padding: 0;
+          padding-bottom:0.5rem;
+          border-bottom:2px solid black;
+          background: none;
+          box-shadow: 0 12px 27.8px 4.2px rgba(255, 152, 0, 0);
+        }
+      }
+    }
+  }
+  .rubric_element-text {
+    margin:0 auto;
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    right: 0;;
+    text-align: center;
+    a {
+      color: black;
+      padding: 0;
+      padding-bottom:0.3rem;
+      border-bottom:2px solid black;
+      border-radius:0;
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+}

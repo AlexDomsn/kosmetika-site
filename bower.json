@@ -1,5 +1,5 @@
 {
-  "name": "kosmetika-site",
+  "name": "rabota.ua 20.02",
   "authors": [
     "AlexDomson <alex@4ats.ru>"
   ],
@@ -16,8 +16,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0",
-    "lightbox2": "^2.9.0",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "font-awesome": "^4.7.0"
   }
 }
