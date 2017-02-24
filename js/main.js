@@ -11,10 +11,24 @@ $(function () {
 $(function () {
     $('.rage_people').slick({
         centerMode: true,
-        centerPadding: '225px 100px',
+        centerPadding: '185px 100px',
         slidesToShow: 1,
         dots:false,
-        arrows:true
+        arrows:true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '0px 100px',
+                    slidesToShow: 1,
+                    dots:false,
+                    arrows:true
+                }
+            },
+        ],
+        prevArrow: '<a href="#" class="arrow_cont prev"><img src="image/slider_prev.png" alt="" class="customer_arrow" /></a>',
+        nextArrow: '<a href="#" class="arrow_cont next"><img src="image/slider_next.png" alt="" class="customer_arrow" /></a>'
     });
 });
 

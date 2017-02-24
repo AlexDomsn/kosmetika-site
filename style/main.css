@@ -1,3 +1,4 @@
+@import "../fonts/roboto/roboto.css";
 @font-face {
   font-family: "GothamPro";
   src: url("fonts/GothamPro.ttf");
@@ -13,7 +14,6 @@ html {
   height: 100vh;
 }
 body {
-  font-family: 'OpenSans', sans-serif;
   overflow-x: hidden;
   height: 100vh;
   margin: 0;
@@ -28,6 +28,9 @@ body {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background: #110e0f;
+}
+.footer_hr {
+  display: none;
 }
 .footer_info {
   text-align: right;
@@ -49,6 +52,28 @@ body {
 }
 .footer_info .info_social a:last-child {
   margin: 0 0 0 1rem;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .footer {
+    padding-top: 6rem;
+    padding-bottom: 5.4rem;
+  }
+  .footer_logo {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer_hr {
+    display: block;
+    margin: 1.5rem auto 2.3rem;
+    text-align: center;
+  }
+  .footer_hr hr {
+    border: 3px solid #ff9919;
+    width: 3rem;
+  }
+  .footer_info {
+    text-align: center;
+  }
 }
 .main {
   background-image: url("../image/index_bg.png");
@@ -1047,9 +1072,40 @@ body {
     display: block;
   }
 }
+@font-face {
+  font-family: "Baskerville";
+  src: url("/fonts/BaskervilleBoldItalic.ttf");
+}
+@font-face {
+  font-family: "GothamPro";
+  src: url("fonts/GothamPro.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("fonts/OpenSans.ttf");
+}
 .slider {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+.slider .arrow_cont {
+  position: absolute;
+  top: 2rem;
+  margin: auto 0;
+  display: block;
+  transform: translateY(50%);
+  z-index: 999;
+  padding: 1rem 2rem;
+}
+.slider .arrow_cont.prev {
+  left: 7rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider .arrow_cont.next {
+  right: 7rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .rage_people div {
   margin: auto;
@@ -1066,7 +1122,7 @@ body {
 .slider_element {
   margin-top: 10rem !important;
   position: relative;
-  height: 40rem;
+  height: 37.3rem;
   width: 77rem;
   background: white;
   padding-right: 8.2rem;
@@ -1081,10 +1137,25 @@ body {
   width: 34.2rem;
   display: inline-block;
   vertical-align: top;
+  position: relative;
+  top: -2.6rem;
 }
 .slider_img img {
   height: auto;
   width: 100%;
+}
+.slider_coma {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.slider_coma p {
+  font-size: 36rem;
+  color: rgba(0, 0, 0, 0.12);
+  font-weight: 700;
+  font-family: "Baskerville", sans-serif !important;
 }
 .slider-text {
   width: 30rem;
@@ -1098,6 +1169,7 @@ body {
   font-weight: 900;
   color: #242424;
   margin-top: 7rem;
+  font-family: Arial, sans-serif !important;
 }
 .slider-text .text_hr hr {
   border: 5px solid #ff9800;
@@ -1110,6 +1182,82 @@ body {
   font-weight: 400;
   color: #070707;
   margin-bottom: 7.6rem;
+}
+@media (max-width: 768px) {
+  .slider {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .slider .arrow_cont {
+    position: absolute;
+    top: 2rem;
+  }
+  .slider .arrow_cont.prev {
+    left: 0;
+    bottom: 0;
+    transform: translateY(0%);
+  }
+  .slider .arrow_cont.next {
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+  }
+  .slider_element {
+    margin-top: 10rem !important;
+    position: relative;
+    height: auto;
+    width: 100% !important;
+    background: white;
+    padding-right: 0;
+    padding-left: 0;
+    box-shadow: 0 6px 66.6px 31.4px rgba(0, 0, 0, 0), 0 5px 15.4px 0.6px rgba(0, 0, 0, 0);
+    opacity: 0.44;
+    transform: scale(0.8);
+    transition: all 0.5s;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .slider_img {
+    width: 100% !important;
+    height: 37.3rem !important;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 6.5rem;
+    left: -35%;
+    float: none;
+  }
+  .slider_img img {
+    height: 100%;
+    width: 100%;
+    float: right;
+  }
+  .slider-text {
+    width: 50% !important;
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: left;
+    float: right;
+  }
+  .slider-text .text_title p {
+    font-size: 1.4rem;
+    line-height: 0.8rem;
+    font-weight: 900;
+    color: #1f1f1f;
+    margin-top: 3rem;
+  }
+  .slider-text .text_hr hr {
+    border: 3px solid #ff9800;
+    width: 3rem;
+    margin: 1.3rem 0 2.5rem;
+  }
+  .slider-text .text_desc p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: #010101;
+    margin-bottom: 2.7rem;
+  }
 }
 @font-face {
   font-family: "GothamPro";
@@ -1169,9 +1317,9 @@ body {
 .video {
   padding-top: 10rem;
   padding-bottom: 12rem;
-  background-image: url("../image/video_bg.png");
-  background-size: 100% 100%;
-  background-position: center center;
+  background-image: url("../image/Rage/shadowvideo.png"), url("../image/video_bg.png");
+  background-size: auto auto, 100% 100%;
+  background-position: center 28rem, center center;
   background-repeat: no-repeat;
 }
 .video_block {
@@ -1199,6 +1347,9 @@ body {
   .video {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    background-image: url("../image/video_bg.png");
+    background-size: 100% 100%;
+    background-position: center center;
   }
   .video_block {
     margin: 3rem auto 0;
