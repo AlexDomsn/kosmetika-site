@@ -1,0 +1,649 @@
+@font-face {
+  font-family: "Carolina";
+  src: url("../fonts/Carolina/Carolina.ttf");
+}
+
+.MainScroll {
+  height: 100vh;
+  background-image: url("../img/Form.svg"), url("../img/Baner-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right bottom, left bottom;
+  background-size: auto 50%, 100% 100% !important;
+}
+
+.MainForm {
+  display: inline-flex;
+  position: absolute;
+  bottom: 7vh;
+  right: 5rem;
+  form {
+    .Form-group {
+      margin-bottom: 3rem;
+      .form__input {
+        width: 30rem;
+        display: block;
+        border: transparent;
+        border-bottom: 1px solid @black_form;
+        background: transparent;
+        color: @white;
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      input {
+        outline: none !important;
+      }
+      label {
+        font-size: 1.2rem;
+        color: @black;
+        text-transform: uppercase;
+      }
+      &.group_last {
+        margin-bottom: 3.8rem;
+      }
+    }
+    .button {
+      width: 30rem;
+      padding: 2.2rem 5.5rem;
+      border-radius: 50px;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-family: Roboto, sans-serif;
+      outline: none;
+      background: @pink;
+      color: @white;
+      box-shadow: 0 6px 20px -6px rgba(0,0,0,0.4);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.MainSale_price {
+  position: absolute;
+  bottom: 5vh;
+  left: 45%;
+  .Price_non {
+    color: @Price_pink;
+    font-size: 3.3rem;
+    line-height: 4rem;
+    background-image: url("../images/PriceNone.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    sup {
+      font-size: 1.2rem;
+      top: -1.5em;
+      left:-1rem;
+    }
+  }
+  .Price_active {
+    font-size: 9.8rem;
+    line-height: 8rem;
+    font-weight: 700;
+    color: @white;
+    sup {
+      font-size: 2rem;
+      top: -3.2em;
+      left:-2rem;
+    }
+  }
+  .Price_desc {
+    font-size: 2.2rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: @black;
+  }
+}
+
+.MainTitle_block {
+  display: flex;
+  position: absolute;
+  bottom: 50vh;
+  width: 100%;
+  left: 50%;
+
+  .title_name {
+    display: block;
+    .title_element1 {
+      margin-bottom: 0.1rem;
+      font-family: Roboto, sans-serif;
+      font-size: 6rem;
+      font-weight: 300;
+      color: @black_title;
+      line-height: 2rem;
+      display: block;
+    }
+    .h1 {
+      margin-top: 0;
+      font-size: 17.6rem;
+      line-height: 17rem;
+      font-family: Oswald, sans-serif !important;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: @pink;
+      letter-spacing: 10px;
+    }
+    .title_element2 {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      font-weight: 400;
+      color: @lightGray;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.MainSale {
+  width: 60%;
+  vertical-align: bottom;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 10vh;
+  left: 10%;
+  .SaleBig_element {
+    height: 50%;
+    width: 55%;
+    text-align: center;
+    display: inline-block;
+    span {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: @lightGrayOp;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 2.4rem;
+      margin-left: 5rem;
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .SalePlus_element {
+    display: inline-block;
+    margin-bottom: 4rem;
+    span {
+      font-family: Carolina, sans-serif;
+      font-size: 24.1rem;
+      line-height: 1rem;
+      font-weight: 400;
+      color: @white;
+      margin-left: -2rem;
+    }
+  }
+  .SaleSmall_element {
+    height: 50%;
+    width: 40%;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 4rem;
+    span {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: @lightGrayOp;
+      text-transform: uppercase;
+      display: block;
+      margin-left: 4rem;
+      margin-bottom: 2.4rem;
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+
+.MobileBtn {
+  display: none;
+}
+
+@media screen and (min-width: 1600px) {
+  .MainScroll {
+    background-size: auto 40%, 100% 100% !important;
+  }
+
+  .MainSale {
+    bottom: 20vh;
+  }
+
+  .MainTitle_block {
+    .title_name {
+      .h1 {
+        margin-left: 20rem;
+      }
+      .title_element2 {
+        margin-left: 20rem;
+      }
+    }
+  }
+
+  .MainSale_price {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    .Price_non {
+      color: @Price_pink;
+      font-size: 3.3rem;
+      line-height: 2rem;
+      background-image: url("../images/PriceNone.png");
+      background-repeat: no-repeat;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+    .Price_active {
+      margin-left: 8rem;
+    }
+    .Price_desc {
+      margin-left:9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) and (max-height: 901px) {
+  .MainScroll {
+    background-size: auto 45%, 100% 100% !important;
+  }
+
+  .MainSale {
+    bottom: 20vh;
+    left:5%;
+  }
+
+  .MainTitle_block {
+    left:40%;
+    .title_name {
+      .h1 {
+        margin-left: 20rem;
+      }
+      .title_element2 {
+        margin-left: 20rem;
+      }
+    }
+  }
+  .MainSale_price {
+    position: absolute;
+    bottom: 5vh;
+    left: 40%;
+    .Price_non {
+      color: @Price_pink;
+      font-size: 3.3rem;
+      line-height: 2rem;
+      background-image: url("../images/PriceNone.png");
+      background-repeat: no-repeat;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+    .Price_active {
+      margin-left: 8rem;
+    }
+    .Price_desc {
+      margin-left:9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) and (min-height: 902px) {
+  .MainScroll {
+    background-size: auto 40%, 100% 100% !important;
+  }
+
+  .MainSale {
+    bottom: 20vh;
+    left:5%;
+  }
+
+  .MainTitle_block {
+    left:40%;
+    .title_name {
+      .h1 {
+        margin-left: 20rem;
+      }
+      .title_element2 {
+        margin-left: 20rem;
+      }
+    }
+  }
+
+  .MainSale_price {
+    position: absolute;
+    bottom: 5vh;
+    left: 40%;
+    .Price_non {
+      color: @Price_pink;
+      font-size: 3.3rem;
+      line-height: 2rem;
+      background-image: url("../images/PriceNone.png");
+      background-repeat: no-repeat;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+    .Price_active {
+      margin-left: 8rem;
+    }
+    .Price_desc {
+      margin-left:9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .MainScroll {
+    background-size: auto 40%, 100% 100% !important;
+  }
+
+  .MainSale {
+    bottom: 18.5vh;
+    left:5%;
+  }
+
+  .MainTitle_block {
+    left:35%;
+    .title_name {
+      .h1 {
+        margin-left: 20rem;
+      }
+      .title_element2 {
+        margin-left: 20rem;
+      }
+    }
+  }
+
+  .MainSale_price {
+    position: absolute;
+    bottom: 3.5vh;
+    left: 35%;
+    .Price_non {
+      color: @Price_pink;
+      font-size: 3.3rem;
+      line-height: 2rem;
+      background-image: url("../images/PriceNone.png");
+      background-repeat: no-repeat;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+    .Price_active {
+      margin-left: 8rem;
+    }
+    .Price_desc {
+      margin-left:9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) and (min-height: 600px) and (max-height: 800px) {
+  .MainScroll {
+    background-size: auto 60%, 100% 100% !important;
+  }
+
+
+  .MainSale_price {
+    position: absolute;
+    bottom: 1.5vh !important;
+    left: 40%;
+    .Price_non {
+      color: @Price_pink;
+      font-size: 3.3rem;
+      line-height: 1rem;
+      sup {
+        font-size: 1.2rem;
+        top: -1.5em;
+        left:-1rem;
+      }
+    }
+    .Price_active {
+      font-size: 6.8rem;
+      line-height: 5rem;
+      sup {
+        font-size: 2rem;
+        top: -2.2em;
+        left: -1.5rem;
+      }
+    }
+    .Price_desc {
+      font-size: 2.2rem;
+      line-height: 2rem;
+    }
+  }
+
+  .MainTitle_block {
+    bottom: 50vh;
+    left:40%;
+
+    .title_name {
+
+      .title_element1 {
+        font-size: 5rem;
+        line-height: 2rem;
+      }
+      .h1 {
+        font-size: 13.6rem;
+        line-height: 13rem;
+      }
+      .title_element2 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .MainSale {
+    width: 55%;
+    bottom: 15vh;
+    left: 5%;
+    .SalePlus_element {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .MainForm {
+    display: inline-flex;
+    position: absolute;
+    bottom: 7vh;
+    right: 2rem;
+    form {
+      .Form-group {
+        margin-bottom: 1.5rem;
+        .form__input {
+          width: 30rem;
+          display: block;
+          border: transparent;
+          border-bottom: 1px solid @black_form;
+          background: transparent;
+          color: @white;
+          font-size: 2.4rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        input {
+          outline: none !important;
+        }
+        label {
+          font-size: 1.2rem;
+          color: @black;
+          text-transform: uppercase;
+        }
+        &.group_last {
+          margin-bottom: 3rem;
+        }
+      }
+      .button {
+        width: 30rem;
+        padding: 2.2rem 5.5rem;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: Roboto, sans-serif;
+        outline: none;
+        background: @pink;
+        color: @white;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) and (min-height: 801px) and (max-height: 1000px) {
+  .MainScroll {
+    background-size: auto 44%, 100% 100% !important;
+  }
+  .MainSale {
+    bottom: 16vh;
+    left:5%;
+  }
+  .MainTitle_block {
+    left:40%;
+  }
+
+  .MainSale_price {
+    bottom: 1.5vh;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .MainScroll {
+    height: 100%;
+    background-image: url("../img/Baner-background.jpg");
+    background-repeat: no-repeat;
+    background-position: -50rem -30rem;
+    background-size: auto 150% !important;
+  }
+
+  .MainForm {
+    display:none;
+  }
+
+  .MainSale_price {
+    position: static;
+    .Price_non {
+      color: @Price_pink;
+      font-size: 3.3rem;
+      line-height: 4rem;
+      background-image: url("../images/PriceNone.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      margin-right: 20rem;
+      margin-bottom: -3rem;
+      text-align: right;
+      sup {
+        font-size: 1.2rem;
+        top: -1.5em;
+        left:-1rem;
+      }
+    }
+    .Price_active {
+      font-size: 6rem;
+      line-height: 5rem;
+      font-weight: 700;
+      color: @white;
+      text-align: right;
+      margin-right: 0;
+      sup {
+        font-size: 1.5rem;
+        top: -2.8em;
+        left: -2rem;
+      }
+    }
+    .Price_desc {
+      font-size: 1.6rem;
+      margin-right: 2.1rem;
+      text-align: right;
+      line-height: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: @black;
+    }
+  }
+
+  .MainTitle_block {
+    text-align: center;
+    padding-top: 10rem;
+    display: flex;
+    position: static;
+    width: 100%;
+    justify-content: center;
+    .title_name {
+      display: block;
+      .title_element1 {
+        margin-bottom: 0.1rem;
+        font-family: Roboto, sans-serif;
+        font-size: 3rem;
+        font-weight: 300;
+        color: @black_title;
+        line-height: 2rem;
+        display: block;
+      }
+      .h1 {
+        margin-top: 0;
+        margin-left:7rem;
+        font-size: 10rem;
+        line-height: 10rem;
+        font-family: Oswald, sans-serif !important;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: @pink;
+      }
+      .title_element2 {
+        display:none;
+      }
+    }
+  }
+
+  .MainSale {
+    width: 100%;
+    vertical-align: bottom;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: static;
+    .SaleBig_element {
+      margin-left: 2rem;
+      span {
+        display: none;
+      }
+    }
+    .SalePlus_element {
+      margin-bottom: 1rem;
+      span {
+        font-size: 12.1rem;
+        margin-left:-1rem;
+      }
+    }
+    .SaleSmall_element {
+      margin-bottom: 2rem;
+      margin-right:2rem;
+      span {
+        display: none;
+      }
+    }
+  }
+  .MobileBtn {
+    display: flex;
+    justify-content:center;
+    padding:2rem 0;
+    .button {
+      width: 30rem;
+      padding: 2.2rem 5.5rem;
+      border-radius: 50px;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-family: Roboto, sans-serif;
+      outline: none;
+      background: orange;
+      color: @white;
+      box-shadow: 0 6px 20px -6px rgba(0,0,0,0.4);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

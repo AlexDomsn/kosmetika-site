@@ -1,5 +1,5 @@
 {
-  "name": "rabota.ua 20.02",
+  "name": "Kylie-site",
   "authors": [
     "AlexDomson <alex@4ats.ru>"
   ],
@@ -16,7 +16,6 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "slick-carousel": "^1.6.0",
-    "font-awesome": "^4.7.0"
+    "slick-carousel": "^1.6.0"
   }
 }

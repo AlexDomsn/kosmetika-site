@@ -1,0 +1,285 @@
+.modal-content {
+  background-image: url("../images/Modal-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+}
+
+.ModalForm {
+  form {
+    .customer_group {
+      width: 49%;
+      display: inline-block;
+      .Form-group {
+        margin: auto;
+        width: 30rem;
+        .form__input {
+          width: 30rem;
+          display: block;
+          border: transparent;
+          border-bottom: 1px solid @black_form;
+          background: transparent;
+          color: @white;
+          font-size: 2.8rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        input {
+          outline: none !important;
+        }
+        label {
+          font-size: 1.2rem;
+          color: @black;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .button {
+      display: block;
+      margin: 1rem auto -3.5rem;
+      width: 30rem;
+      padding: 2.2rem 5.5rem;
+      border-radius: 50px;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-family: Roboto, sans-serif;
+      outline: none;
+      background: @pink;
+      color: @white;
+      box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.4);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.Carousel_block {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  .Carousel_slick {
+    width: 30rem;
+    margin: auto;
+  }
+}
+
+.InfoProduct {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  .Info_element {
+    width: 30rem;
+    margin: auto;
+  }
+}
+
+.InfoName {
+  p {
+    font-size:2.2rem;
+    text-transform: uppercase;
+    font-weight:700;
+    color: @black;
+    margin-bottom:1.2rem;
+  }
+}
+.InfoPrice {
+  p {
+    font-size:3.7rem;
+    font-weight:700;
+    color: @pink;
+    text-transform: uppercase;
+    margin-bottom:2rem;
+    span {
+      font-size:1.2rem;
+      font-weight:600;
+      color: @black;
+      text-transform: uppercase;
+    }
+  }
+}
+.InfoDesc {
+  margin-bottom:6rem;
+  p {
+    font-size:1.4rem;
+    line-height:2.6rem;
+    color: @black
+  }
+}
+
+.close {
+  margin-right: -6rem;
+  margin-top: -2.5rem;
+  &:hover, &:focus {
+    opacity: 1;
+  }
+}
+
+.arrow_cont {
+  bottom: -25px;
+  position: absolute;
+  z-index: 999;
+  &.next {
+    right: 0;
+  }
+  &.prev {
+    left: 0;
+  }
+}
+
+.modal-body {
+  padding: 25px 0;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•'; /* <-- Вот этот символ */
+  text-align: center;
+  opacity: .25;
+  color: @pink !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 770px !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .Carousel_block {
+    .Carousel_slick {
+      width: 100% !important;
+    }
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .Carousel_block {
+    .Carousel_slick {
+      width: 60% !important;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-content {
+    background-image: url("../images/Modal-bg.png");
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: bottom center;
+  }
+
+  .ModalForm {
+    padding:0 10px;
+    form {
+      .customer_group {
+        width: 100%;
+        display: block;
+        .Form-group {
+          margin: auto;
+          width: 100%;
+          .form__input {
+            width: 100%;
+            display: block;
+            border: transparent;
+            border-bottom: 1px solid @black_form;
+            background: transparent;
+            color: @white;
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+          input {
+            outline: none !important;
+          }
+          label {
+            font-size: 1.2rem;
+            color: @black;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .button {
+        display: block;
+        margin: 1rem auto;
+        width: 100%;
+        padding: 1.6rem 3.5rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .Carousel_block {
+    width: 100%;
+    display: block;
+    padding:0 10px;
+    vertical-align: middle;
+    .Carousel_slick {
+      width: 60%;
+      margin: auto;
+    }
+    img {
+      margin:auto;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  .InfoProduct {
+    width: 100%;
+    display: block;
+    .Info_element {
+      width: 100%;
+    }
+  }
+
+  .InfoName {
+    p {
+      font-size:1.6rem;
+      margin-bottom:1rem;
+    }
+  }
+  .InfoPrice {
+    p {
+      font-size:2.4rem;
+      margin-bottom:1rem;
+      span {
+        font-size:1rem;
+      }
+    }
+  }
+  .InfoDesc {
+    margin-bottom:2rem;
+    p {
+      font-size:1.2rem;
+      line-height:2rem;
+    }
+  }
+
+  .close {
+    margin-right: 0;
+    margin-top: 0;
+    background: @pink !important;
+    padding:5px !important;
+    border-radius: 50%;
+    &:hover, &:focus {
+      opacity: 1;
+    }
+  }
+
+
+
+  .modal-body {
+    padding: 15px 10px;
+  }
+
+}
+
+.slick-list {
+  width: 100%;
+}

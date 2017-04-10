@@ -1,0 +1,43 @@
+.Header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+}
+.HeaderPhone {
+  text-align: right;
+  margin-top:3rem;
+  a {
+    display: block;
+  }
+  .phone {
+    color: @black;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+    }
+  }
+  .pink {
+    color:@pink;
+  }
+  .phone-detalic {
+    font-size:1.2rem;
+    font-weight:400;
+    color: @lightGray;
+    text-transform: uppercase;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .HeaderPhone {
+    margin-top:1rem;
+    .phone {
+      font-size:2rem;
+    }
+  }
+}

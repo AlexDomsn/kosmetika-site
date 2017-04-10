@@ -1,0 +1,1135 @@
+@import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+  font-family: "Carolina";
+  src: url("/fonts/Carolina/Carolina.ttf");
+}
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  font-weight: 400;
+}
+.Header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+}
+.HeaderPhone {
+  text-align: right;
+  margin-top: 3rem;
+}
+.HeaderPhone a {
+  display: block;
+}
+.HeaderPhone .phone {
+  color: #263238;
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.HeaderPhone .phone:hover,
+.HeaderPhone .phone:focus,
+.HeaderPhone .phone:active {
+  text-decoration: none;
+}
+.HeaderPhone .pink {
+  color: #dd6d99;
+}
+.HeaderPhone .phone-detalic {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #37474f;
+  text-transform: uppercase;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .HeaderPhone {
+    margin-top: 1rem;
+  }
+  .HeaderPhone .phone {
+    font-size: 2rem;
+  }
+}
+@font-face {
+  font-family: "Carolina";
+  src: url("../fonts/Carolina/Carolina.ttf");
+}
+.MainScroll {
+  height: 100vh;
+  background-image: url("../img/Form.svg"), url("../img/Baner-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right bottom, left bottom;
+  background-size: auto 50%, 100% 100% !important;
+}
+.MainForm {
+  display: inline-flex;
+  position: absolute;
+  bottom: 7vh;
+  right: 5rem;
+}
+.MainForm form .Form-group {
+  margin-bottom: 3rem;
+}
+.MainForm form .Form-group .form__input {
+  width: 30rem;
+  display: block;
+  border: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.MainForm form .Form-group input {
+  outline: none !important;
+}
+.MainForm form .Form-group label {
+  font-size: 1.2rem;
+  color: #263238;
+  text-transform: uppercase;
+}
+.MainForm form .Form-group.group_last {
+  margin-bottom: 3.8rem;
+}
+.MainForm form .button {
+  width: 30rem;
+  padding: 2.2rem 5.5rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: Roboto, sans-serif;
+  outline: none;
+  background: #dd6d99;
+  color: #fff;
+  box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.4);
+}
+.MainForm form .button:hover {
+  text-decoration: none;
+}
+.MainSale_price {
+  position: absolute;
+  bottom: 5vh;
+  left: 45%;
+}
+.MainSale_price .Price_non {
+  color: #880e4f;
+  font-size: 3.3rem;
+  line-height: 4rem;
+  background-image: url("../images/PriceNone.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.MainSale_price .Price_non sup {
+  font-size: 1.2rem;
+  top: -1.5em;
+  left: -1rem;
+}
+.MainSale_price .Price_active {
+  font-size: 9.8rem;
+  line-height: 8rem;
+  font-weight: 700;
+  color: #fff;
+}
+.MainSale_price .Price_active sup {
+  font-size: 2rem;
+  top: -3.2em;
+  left: -2rem;
+}
+.MainSale_price .Price_desc {
+  font-size: 2.2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #263238;
+}
+.MainTitle_block {
+  display: flex;
+  position: absolute;
+  bottom: 50vh;
+  width: 100%;
+  left: 50%;
+}
+.MainTitle_block .title_name {
+  display: block;
+}
+.MainTitle_block .title_name .title_element1 {
+  margin-bottom: 0.1rem;
+  font-family: Roboto, sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+  color: #3e2723;
+  line-height: 2rem;
+  display: block;
+}
+.MainTitle_block .title_name .h1 {
+  margin-top: 0;
+  font-size: 17.6rem;
+  line-height: 17rem;
+  font-family: Oswald, sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #dd6d99;
+  letter-spacing: 10px;
+}
+.MainTitle_block .title_name .title_element2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #37474f;
+  text-transform: uppercase;
+}
+.MainSale {
+  width: 60%;
+  vertical-align: bottom;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 10vh;
+  left: 10%;
+}
+.MainSale .SaleBig_element {
+  height: 50%;
+  width: 55%;
+  text-align: center;
+  display: inline-block;
+}
+.MainSale .SaleBig_element span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(55, 71, 79, 0.6);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2.4rem;
+  margin-left: 5rem;
+}
+.MainSale .SaleBig_element img {
+  height: auto;
+  width: 100%;
+}
+.MainSale .SalePlus_element {
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+.MainSale .SalePlus_element span {
+  font-family: Carolina, sans-serif;
+  font-size: 24.1rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #fff;
+  margin-left: -2rem;
+}
+.MainSale .SaleSmall_element {
+  height: 50%;
+  width: 40%;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+.MainSale .SaleSmall_element span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(55, 71, 79, 0.6);
+  text-transform: uppercase;
+  display: block;
+  margin-left: 4rem;
+  margin-bottom: 2.4rem;
+}
+.MainSale .SaleSmall_element img {
+  height: auto;
+  width: 100%;
+}
+.MobileBtn {
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .MainScroll {
+    background-size: auto 40%, 100% 100% !important;
+  }
+  .MainSale {
+    bottom: 20vh;
+  }
+  .MainTitle_block .title_name .h1 {
+    margin-left: 20rem;
+  }
+  .MainTitle_block .title_name .title_element2 {
+    margin-left: 20rem;
+  }
+  .MainSale_price {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+  }
+  .MainSale_price .Price_non {
+    color: #880e4f;
+    font-size: 3.3rem;
+    line-height: 2rem;
+    background-image: url("../images/PriceNone.png");
+    background-repeat: no-repeat;
+  }
+  .MainSale_price .Price_non span {
+    font-size: 1.2rem;
+  }
+  .MainSale_price .Price_active {
+    margin-left: 8rem;
+  }
+  .MainSale_price .Price_desc {
+    margin-left: 9rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1599px) and (max-height: 901px) {
+  .MainScroll {
+    background-size: auto 45%, 100% 100% !important;
+  }
+  .MainSale {
+    bottom: 20vh;
+    left: 5%;
+  }
+  .MainTitle_block {
+    left: 40%;
+  }
+  .MainTitle_block .title_name .h1 {
+    margin-left: 20rem;
+  }
+  .MainTitle_block .title_name .title_element2 {
+    margin-left: 20rem;
+  }
+  .MainSale_price {
+    position: absolute;
+    bottom: 5vh;
+    left: 40%;
+  }
+  .MainSale_price .Price_non {
+    color: #880e4f;
+    font-size: 3.3rem;
+    line-height: 2rem;
+    background-image: url("../images/PriceNone.png");
+    background-repeat: no-repeat;
+  }
+  .MainSale_price .Price_non span {
+    font-size: 1.2rem;
+  }
+  .MainSale_price .Price_active {
+    margin-left: 8rem;
+  }
+  .MainSale_price .Price_desc {
+    margin-left: 9rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1599px) and (min-height: 902px) {
+  .MainScroll {
+    background-size: auto 40%, 100% 100% !important;
+  }
+  .MainSale {
+    bottom: 20vh;
+    left: 5%;
+  }
+  .MainTitle_block {
+    left: 40%;
+  }
+  .MainTitle_block .title_name .h1 {
+    margin-left: 20rem;
+  }
+  .MainTitle_block .title_name .title_element2 {
+    margin-left: 20rem;
+  }
+  .MainSale_price {
+    position: absolute;
+    bottom: 5vh;
+    left: 40%;
+  }
+  .MainSale_price .Price_non {
+    color: #880e4f;
+    font-size: 3.3rem;
+    line-height: 2rem;
+    background-image: url("../images/PriceNone.png");
+    background-repeat: no-repeat;
+  }
+  .MainSale_price .Price_non span {
+    font-size: 1.2rem;
+  }
+  .MainSale_price .Price_active {
+    margin-left: 8rem;
+  }
+  .MainSale_price .Price_desc {
+    margin-left: 9rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .MainScroll {
+    background-size: auto 40%, 100% 100% !important;
+  }
+  .MainSale {
+    bottom: 18.5vh;
+    left: 5%;
+  }
+  .MainTitle_block {
+    left: 35%;
+  }
+  .MainTitle_block .title_name .h1 {
+    margin-left: 20rem;
+  }
+  .MainTitle_block .title_name .title_element2 {
+    margin-left: 20rem;
+  }
+  .MainSale_price {
+    position: absolute;
+    bottom: 3.5vh;
+    left: 35%;
+  }
+  .MainSale_price .Price_non {
+    color: #880e4f;
+    font-size: 3.3rem;
+    line-height: 2rem;
+    background-image: url("../images/PriceNone.png");
+    background-repeat: no-repeat;
+  }
+  .MainSale_price .Price_non span {
+    font-size: 1.2rem;
+  }
+  .MainSale_price .Price_active {
+    margin-left: 8rem;
+  }
+  .MainSale_price .Price_desc {
+    margin-left: 9rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) and (min-height: 600px) and (max-height: 800px) {
+  .MainScroll {
+    background-size: auto 60%, 100% 100% !important;
+  }
+  .MainSale_price {
+    position: absolute;
+    bottom: 1.5vh !important;
+    left: 40%;
+  }
+  .MainSale_price .Price_non {
+    color: #880e4f;
+    font-size: 3.3rem;
+    line-height: 1rem;
+  }
+  .MainSale_price .Price_non sup {
+    font-size: 1.2rem;
+    top: -1.5em;
+    left: -1rem;
+  }
+  .MainSale_price .Price_active {
+    font-size: 6.8rem;
+    line-height: 5rem;
+  }
+  .MainSale_price .Price_active sup {
+    font-size: 2rem;
+    top: -2.2em;
+    left: -1.5rem;
+  }
+  .MainSale_price .Price_desc {
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+  .MainTitle_block {
+    bottom: 50vh;
+    left: 40%;
+  }
+  .MainTitle_block .title_name .title_element1 {
+    font-size: 5rem;
+    line-height: 2rem;
+  }
+  .MainTitle_block .title_name .h1 {
+    font-size: 13.6rem;
+    line-height: 13rem;
+  }
+  .MainTitle_block .title_name .title_element2 {
+    font-size: 1rem;
+  }
+  .MainSale {
+    width: 55%;
+    bottom: 15vh;
+    left: 5%;
+  }
+  .MainSale .SalePlus_element {
+    margin-bottom: 1.5rem;
+  }
+  .MainForm {
+    display: inline-flex;
+    position: absolute;
+    bottom: 7vh;
+    right: 2rem;
+  }
+  .MainForm form .Form-group {
+    margin-bottom: 1.5rem;
+  }
+  .MainForm form .Form-group .form__input {
+    width: 30rem;
+    display: block;
+    border: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .MainForm form .Form-group input {
+    outline: none !important;
+  }
+  .MainForm form .Form-group label {
+    font-size: 1.2rem;
+    color: #263238;
+    text-transform: uppercase;
+  }
+  .MainForm form .Form-group.group_last {
+    margin-bottom: 3rem;
+  }
+  .MainForm form .button {
+    width: 30rem;
+    padding: 2.2rem 5.5rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: Roboto, sans-serif;
+    outline: none;
+    background: #dd6d99;
+    color: #fff;
+  }
+  .MainForm form .button:hover {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) and (min-height: 801px) and (max-height: 1000px) {
+  .MainScroll {
+    background-size: auto 44%, 100% 100% !important;
+  }
+  .MainSale {
+    bottom: 16vh;
+    left: 5%;
+  }
+  .MainTitle_block {
+    left: 40%;
+  }
+  .MainSale_price {
+    bottom: 1.5vh;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .MainScroll {
+    height: 100%;
+    background-image: url("../img/Baner-background.jpg");
+    background-repeat: no-repeat;
+    background-position: -50rem -30rem;
+    background-size: auto 150% !important;
+  }
+  .MainForm {
+    display: none;
+  }
+  .MainSale_price {
+    position: static;
+  }
+  .MainSale_price .Price_non {
+    color: #880e4f;
+    font-size: 3.3rem;
+    line-height: 4rem;
+    background-image: url("../images/PriceNone.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-right: 20rem;
+    margin-bottom: -3rem;
+    text-align: right;
+  }
+  .MainSale_price .Price_non sup {
+    font-size: 1.2rem;
+    top: -1.5em;
+    left: -1rem;
+  }
+  .MainSale_price .Price_active {
+    font-size: 6rem;
+    line-height: 5rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: right;
+    margin-right: 0;
+  }
+  .MainSale_price .Price_active sup {
+    font-size: 1.5rem;
+    top: -2.8em;
+    left: -2rem;
+  }
+  .MainSale_price .Price_desc {
+    font-size: 1.6rem;
+    margin-right: 2.1rem;
+    text-align: right;
+    line-height: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #263238;
+  }
+  .MainTitle_block {
+    text-align: center;
+    padding-top: 10rem;
+    display: flex;
+    position: static;
+    width: 100%;
+    justify-content: center;
+  }
+  .MainTitle_block .title_name {
+    display: block;
+  }
+  .MainTitle_block .title_name .title_element1 {
+    margin-bottom: 0.1rem;
+    font-family: Roboto, sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #3e2723;
+    line-height: 2rem;
+    display: block;
+  }
+  .MainTitle_block .title_name .h1 {
+    margin-top: 0;
+    margin-left: 7rem;
+    font-size: 10rem;
+    line-height: 10rem;
+    font-family: Oswald, sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #dd6d99;
+  }
+  .MainTitle_block .title_name .title_element2 {
+    display: none;
+  }
+  .MainSale {
+    width: 100%;
+    vertical-align: bottom;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: static;
+  }
+  .MainSale .SaleBig_element {
+    margin-left: 2rem;
+  }
+  .MainSale .SaleBig_element span {
+    display: none;
+  }
+  .MainSale .SalePlus_element {
+    margin-bottom: 1rem;
+  }
+  .MainSale .SalePlus_element span {
+    font-size: 12.1rem;
+    margin-left: -1rem;
+  }
+  .MainSale .SaleSmall_element {
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  .MainSale .SaleSmall_element span {
+    display: none;
+  }
+  .MobileBtn {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .MobileBtn .button {
+    width: 30rem;
+    padding: 2.2rem 5.5rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: Roboto, sans-serif;
+    outline: none;
+    background: orange;
+    color: #fff;
+    box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.4);
+  }
+  .MobileBtn .button:hover {
+    text-decoration: none;
+  }
+}
+.Catalog_block {
+  outline: none;
+}
+.Catalog_block:focus,
+.Catalog_block:active {
+  outline: none;
+}
+.Catalog_element {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.Catalog_element .Product {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  width: 252px;
+  margin: auto;
+}
+.Catalog_element .Product .ProductPrice {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  text-align: center;
+  z-index: 101;
+  transform: rotate(-45deg);
+}
+.Catalog_element .Product .ProductPrice p {
+  line-height: 14px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+.Catalog_element .Product .ProductPrice p span {
+  font-size: 12px;
+}
+.Catalog_element .Product .ProductTriagle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border: 50px solid transparent;
+  border-left: 50px solid #dd6d99;
+  border-top: 50px solid #dd6d99;
+}
+.Catalog_element .Product .ProductImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1px solid #d1dadd;
+}
+.Catalog_element .Product .ProductImg img {
+  width: 250px;
+  height: 250px;
+}
+.Catalog_element .ProductName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 0;
+  min-height: 7rem;
+}
+.Catalog_element .ProductName p {
+  color: #263238;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.Catalog_element .ProductBuy {
+  display: block;
+  padding: 2rem;
+  width: 22rem;
+  margin: auto;
+  background: #eceff1;
+  border: 1px solid #d1dadd;
+  border-radius: 60px;
+  color: #455a64;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  text-transform: uppercase;
+  transition: 0.5s all;
+}
+.Catalog_element .ProductBuy:hover {
+  background: #dd6b99;
+  color: #fff;
+  border: 1px solid  #dd6b99;
+  box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.4);
+}
+.Catalog_block {
+  transition: 0.5s all;
+  position: relative;
+  display: block;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+.Catalog_block:hover,
+.Catalog_block:focus,
+.Catalog_block:active {
+  text-decoration: none;
+}
+.Catalog_block:hover .Catalog_element .ProductBuy,
+.Catalog_block:focus .Catalog_element .ProductBuy,
+.Catalog_block:active .Catalog_element .ProductBuy {
+  background: #dd6b99;
+  color: #fff;
+  border: 1px solid  #dd6b99;
+  box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.4);
+}
+.Catalog_block:hover .Catalog_element .Product,
+.Catalog_block:focus .Catalog_element .Product,
+.Catalog_block:active .Catalog_element .Product {
+  box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.4);
+}
+.Consultation {
+  background-image: url('../images/consult-bghalf.png'), url('../images/consult-bg1.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%, 110% 50%;
+  background-position: center bottom, center bottom;
+  padding: 100px 0 60px 0;
+}
+.Title {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+.Title .Title-black {
+  color: #3e2723;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+}
+.Title .Title-pink {
+  color: #dd6b99;
+  font-family: Oswald;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.ConsultationForm {
+  text-align: center;
+  margin-top: 100px;
+}
+.ConsultationForm .ConsultationForm-form {
+  display: inline-block;
+  margin-left: -450px;
+}
+.ConsultationForm .Form-group {
+  text-align: left;
+  width: 30rem;
+  margin: 0 auto 1.5rem;
+}
+.ConsultationForm .Form-group .form__input {
+  width: 30rem;
+  display: block;
+  border: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.ConsultationForm .Form-group input {
+  outline: none !important;
+}
+.ConsultationForm .Form-group label {
+  font-size: 1.2rem;
+  color: #263238;
+  text-transform: uppercase;
+}
+.ConsultationForm .Form-group.group_last {
+  margin-bottom: 3rem;
+}
+.ConsultationForm .button {
+  width: 30rem;
+  padding: 2.2rem 5.5rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: Roboto, sans-serif;
+  outline: none;
+  background: #dd6d99;
+  color: #fff;
+  box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.4);
+}
+.ConsultationForm .button:hover {
+  text-decoration: none;
+}
+.Mobile_title {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .Consultation {
+    background-image: none;
+    padding: 15px 0 60px 0;
+    background: #f7aa46;
+  }
+  .ConsultationForm {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .ConsultationForm .ConsultationForm-form {
+    display: inline-block;
+    margin-left: 0;
+  }
+  .Mobile_title {
+    display: block;
+  }
+  .customer_hidden {
+    display: none;
+  }
+  .Title .Title-black {
+    color: #3e2723;
+    font-size: 20px;
+  }
+  .Title .Title-pink {
+    color: #dd6b99;
+    font-size: 40px;
+  }
+}
+.modal-content {
+  background-image: url("../images/Modal-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+}
+.ModalForm form .customer_group {
+  width: 49%;
+  display: inline-block;
+}
+.ModalForm form .customer_group .Form-group {
+  margin: auto;
+  width: 30rem;
+}
+.ModalForm form .customer_group .Form-group .form__input {
+  width: 30rem;
+  display: block;
+  border: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.ModalForm form .customer_group .Form-group input {
+  outline: none !important;
+}
+.ModalForm form .customer_group .Form-group label {
+  font-size: 1.2rem;
+  color: #263238;
+  text-transform: uppercase;
+}
+.ModalForm form .button {
+  display: block;
+  margin: 1rem auto -3.5rem;
+  width: 30rem;
+  padding: 2.2rem 5.5rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: Roboto, sans-serif;
+  outline: none;
+  background: #dd6d99;
+  color: #fff;
+  box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.4);
+}
+.ModalForm form .button:hover {
+  text-decoration: none;
+}
+.Carousel_block {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+.Carousel_block .Carousel_slick {
+  width: 30rem;
+  margin: auto;
+}
+.InfoProduct {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+.InfoProduct .Info_element {
+  width: 30rem;
+  margin: auto;
+}
+.InfoName p {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #263238;
+  margin-bottom: 1.2rem;
+}
+.InfoPrice p {
+  font-size: 3.7rem;
+  font-weight: 700;
+  color: #dd6d99;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.InfoPrice p span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #263238;
+  text-transform: uppercase;
+}
+.InfoDesc {
+  margin-bottom: 6rem;
+}
+.InfoDesc p {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #263238;
+}
+.close {
+  margin-right: -6rem;
+  margin-top: -2.5rem;
+}
+.close:hover,
+.close:focus {
+  opacity: 1;
+}
+.arrow_cont {
+  bottom: -25px;
+  position: absolute;
+  z-index: 999;
+}
+.arrow_cont.next {
+  right: 0;
+}
+.arrow_cont.prev {
+  left: 0;
+}
+.modal-body {
+  padding: 25px 0;
+}
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  /* <-- Вот этот символ */
+  text-align: center;
+  opacity: .25;
+  color: #dd6d99 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 770px !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .Carousel_block .Carousel_slick {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .Carousel_block .Carousel_slick {
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-content {
+    background-image: url("../images/Modal-bg.png");
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: bottom center;
+  }
+  .ModalForm {
+    padding: 0 10px;
+  }
+  .ModalForm form .customer_group {
+    width: 100%;
+    display: block;
+  }
+  .ModalForm form .customer_group .Form-group {
+    margin: auto;
+    width: 100%;
+  }
+  .ModalForm form .customer_group .Form-group .form__input {
+    width: 100%;
+    display: block;
+    border: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .ModalForm form .customer_group .Form-group input {
+    outline: none !important;
+  }
+  .ModalForm form .customer_group .Form-group label {
+    font-size: 1.2rem;
+    color: #263238;
+    text-transform: uppercase;
+  }
+  .ModalForm form .button {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    padding: 1.6rem 3.5rem;
+    text-align: center;
+  }
+  .Carousel_block {
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+    vertical-align: middle;
+  }
+  .Carousel_block .Carousel_slick {
+    width: 60%;
+    margin: auto;
+  }
+  .Carousel_block img {
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .InfoProduct {
+    width: 100%;
+    display: block;
+  }
+  .InfoProduct .Info_element {
+    width: 100%;
+  }
+  .InfoName p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .InfoPrice p {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .InfoPrice p span {
+    font-size: 1rem;
+  }
+  .InfoDesc {
+    margin-bottom: 2rem;
+  }
+  .InfoDesc p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .close {
+    margin-right: 0;
+    margin-top: 0;
+    background: #dd6d99 !important;
+    padding: 5px !important;
+    border-radius: 50%;
+  }
+  .close:hover,
+  .close:focus {
+    opacity: 1;
+  }
+  .modal-body {
+    padding: 15px 10px;
+  }
+}
+.slick-list {
+  width: 100%;
+}
