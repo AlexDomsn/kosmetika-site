@@ -186,6 +186,26 @@ body {
   padding-top: 55px;
   margin-top: -50px;
 }
+.MobileImg .MobileCoffe {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  height: auto;
+  background-image: url(../images/Catalog_price2.png);
+  background-repeat: no-repeat;
+  background-position: 51rem 0;
+  background-size: auto;
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.MobileImg .MobileTable {
+  height: 100%;
+  width: auto;
+  margin-top: -200px;
+  position: relative;
+  z-index: 1;
+  margin-left: -15px;
+}
 @media screen and (max-height: 699px) {
   .MainTitle {
     margin-bottom: 10px;
@@ -366,6 +386,142 @@ body {
 @media screen and (max-width: 1024px) {
   .MainScroll {
     height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .MainCoffe {
+    display: none;
+  }
+  .MainTitle {
+    margin-top: 20px;
+  }
+  .MainScroll {
+    height: auto !important;
+    position: relative;
+    z-index: 10;
+    background-image: url("../images/MainScroll-bg1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .MainForm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .MainAdvantages {
+    width: 250px;
+  }
+  .MainLeft .Delivery {
+    margin-top: 80px;
+  }
+  .MainLeft .Delivery .Delivery_container {
+    left: 0;
+    transform: translateX(0);
+  }
+  .MainLeft .Delivery .Delivery_container.Delivery_cust {
+    margin-right: 15px;
+  }
+  .MainLeft .Delivery .DeliveryText {
+    left: 0;
+    transform: translateX(0);
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .MobileImg .MobileTable {
+    margin-left: -25%;
+  }
+  .MainCoffe {
+    display: none;
+  }
+  .MainTitle {
+    margin-top: 20px;
+  }
+  .MainScroll {
+    height: auto !important;
+    position: relative;
+    z-index: 10;
+    background-image: url("../images/MainScroll-bg1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .MainForm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .MainLeft .Delivery {
+    margin-top: 80px;
+  }
+  .MainLeft .Delivery .Delivery_container.Delivery_cust {
+    margin-right: 15px;
+  }
+  .MainLeft .Delivery .DeliveryText {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .MobileImg .MobileCoffe {
+    width: 290px;
+    position: relative;
+    z-index: 2;
+    height: auto;
+    background-image: url(../images/Catalog_price2.png);
+    background-repeat: no-repeat;
+    background-position: 21.5rem 34px;
+    background-size: 75px 50px;
+    padding-top: 50px;
+    margin-top: -50px;
+  }
+  .MobileImg .MobileTable {
+    height: 100%;
+    width: auto;
+    margin-top: -200px;
+    position: relative;
+    z-index: 1;
+    margin-left: -15px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .Delivery {
+    margin-top: 80px;
+  }
+  .Delivery .Delivery_container {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: block !important;
+    margin-right: 15px;
+  }
+  .Delivery .Delivery_container.Delivery_cust {
+    margin-right: 0 !important;
+  }
+  .Delivery .DeliveryText {
+    text-align: center !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: block !important;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 991px) {
+  .MobileImg .MobileCoffe {
+    width: 350px;
+    position: relative;
+    z-index: 2;
+    height: auto;
+    background-image: url(../images/Catalog_price2.png);
+    background-repeat: no-repeat;
+    background-position: 25.5rem 50px;
+    background-size: 100px 70px;
+    padding-top: 80px;
+    margin-top: -50px;
+  }
+  .MobileImg .MobileTable {
+    height: 100%;
+    width: auto;
+    margin-top: -200px;
+    position: relative;
+    z-index: 1;
+    margin-left: -15px;
   }
 }
 .Catalog {
