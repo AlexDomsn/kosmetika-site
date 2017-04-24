@@ -8,3 +8,29 @@
   background: @white;
   color: @white;
 }
+.HeaderNav {
+  list-style: none;
+  text-align: center;
+  padding-left:0;
+  li {
+    display: inline-block;
+    top: 50%;
+    position: relative;
+    transform: translateY(50%);
+    a {
+      font-size:19px;
+      padding: 10px 10px;
+      color: @black;
+      outline: none;
+      transition: border-bottom 0.3s;
+      border-bottom:3px solid transparent;
+      &:hover {
+        text-decoration: none;
+        border-bottom:3px solid @header_hover;
+      }
+      &:focus, &:active, &:link {
+        text-decoration: none;
+      }
+    }
+  }
+}
