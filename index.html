@@ -257,7 +257,18 @@
 </main>
 
 <footer>
-
+    <div class="Footer">
+        <div class="container">
+            <div class="col-md-6">
+                <a href="#politics" data-toggle="modal" class="confedial">Политика Конфедициальности</a>
+            </div>
+            <div class="col-md-6">
+                <div class="FooterPhone">
+                    <a href="tel:+380675519280" class="phone">+380675519280</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <div class="modal fade" id="1">
     <div class="modal-dialog">
@@ -497,7 +508,23 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
+<div class="modal fade" id="politics" data-controller="ajax">
+    <div class="modal-dialog callback_customer">
+        <div class="modal-content callback_modal_cust">
+            <div class="modal-body politics_modal">
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">-->
+                    <!--<img src="/src/images/Modal-close.png" alt="close">-->
+                <!--</button>-->
+                <p class="politics__text">
+                    Здравствуйте, для нас важна безопасность и конфиденциальность ваших данных. Мы используем Cookies и данные
+                    сайтов Google adwords и Yandex metrica. Где анализируя ваши данные ( поведение на сайте ) мы делаем данный
+                    интернет продукт лучше для вас как посетителя. Третим лицам данные не передаются. Соблюдаются меры
+                    безопасности ваших данных согласно международных стандартов.
+                </p>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

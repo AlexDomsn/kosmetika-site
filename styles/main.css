@@ -889,6 +889,37 @@ body {
     font-weight: 700;
   }
 }
+.Footer {
+  background-image: url("../images/formbg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  padding: 28px 0 26px;
+}
+.Footer .confedial {
+  vertical-align: middle;
+  color: white;
+  font-size: 14px;
+}
+.Footer .confedial:hover,
+.Footer .confedial:focus,
+.Footer .confedial:active {
+  text-decoration: none;
+}
+.Footer .FooterPhone {
+  text-align: right;
+  vertical-align: middle;
+}
+.Footer .FooterPhone .phone {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+.Footer .FooterPhone .phone:hover,
+.Footer .FooterPhone .phone:focus,
+.Footer .FooterPhone .phone:active {
+  text-decoration: none;
+}
 .ModalForm {
   text-align: center;
   position: relative;
